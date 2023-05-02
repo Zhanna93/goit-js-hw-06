@@ -5,5 +5,9 @@ console.log(input)
 
 input.addEventListener('input', (event) => {
  
- input.textContent !== " " ? output.textContent = event.currentTarget.value : output.textContent = 'Anonymous';
+ if (input.value === "") {
+  return output.textContent = "Anonymous"
+ }
+ output.textContent = event.currentTarget.value
+
 });

@@ -16,7 +16,7 @@ function createBoxes(amount) {
     const elem = document.createElement('div');
     
     elem.style.width = 30 + (10 * i)+'px';
-    elem.style.height = 30+'px';
+    elem.style.height = 30+(10 * i)+'px';
     elem.style.backgroundColor = getRandomHexColor();
     
     refs.boxesEl.append(elem);
